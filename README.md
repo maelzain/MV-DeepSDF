@@ -365,8 +365,8 @@ flake8 networks/ scripts/
 
 ### Support Channels
 
-- **🐛 Bug Reports**: [GitHub Issues](https://github.com/maelzain/MV-DeepSDF-/issues)
-- **💬 Technical Discussions**: [GitHub Discussions](https://github.com/maelzain/MV-DeepSDF-/discussions)
+- **🐛 Bug Reports**: [GitHub Issues](https://github.com/maelzain/MV-DeepSDF/issues)
+- **💬 Technical Discussions**: [GitHub Discussions](https://github.com/maelzain/MV-DeepSDF/discussions)
 - **📧 Research Collaboration**: [mme159@mail.aub.edu](mailto:mme159@mail.aub.edu)
 - **👤 LinkedIn**: [Mahdi El-Zain](https://www.linkedin.com/in/mahdi-el-zain/)
 
