@@ -1,0 +1,43 @@
+# Data directories - exclude large dataset files
+dataa/
+data/SdfSamples/
+data/SurfaceSamples/
+data/NormalizationParameters/
+eval_results/
+results/
+experiments/
+
+# Build directories
+build/
+bin/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model checkpoints and logs
+*.pth
+*.ckpt
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp

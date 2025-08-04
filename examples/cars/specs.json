@@ -1,0 +1,66 @@
+{
+  "Description" : [ "This experiment learns a shape representation for cars ",
+                    "using data from ShapeNet version 2." ],
+  "DataSource" : "dataa",
+  "TrainSplit" : "examples/splits/sv2_cars_train_clean.available.json",
+  "TestSplit" : "examples/splits/sv2_cars_test_clean.filtered.json",
+  "NetworkArch" : "deep_sdf_decoder",
+  "NetworkSpecs" : {
+    "dims" : [ 512, 512, 512, 512, 512, 512, 512, 512 ],
+    "dropout" : [0, 1, 2, 3, 4, 5, 6, 7],
+    "dropout_prob" : 0.2,
+    "norm_layers" : [0, 1, 2, 3, 4, 5, 6, 7],
+    "latent_in" : [4],
+    "xyz_in_all" : false,
+    "use_tanh" : false,
+    "latent_dropout" : false,
+    "weight_norm" : true
+    },
+  "CodeLength" : 256,
+  "NumEpochs" : 2200,
+  "SnapshotFrequency" : 20,
+  "AdditionalSnapshots" : [ 100, 500 ],
+  "LearningRateSchedule" : [
+    {
+      "Type" : "Step",
+      "Initial" : 0.0003,
+      "Interval" : 100,
+      "Factor" : 0.5
+    },
+    {
+      "Type" : "Step",
+      "Initial" : 0.001,
+      "Interval" : 100,
+      "Factor" : 0.5
+    }
+  ],
+  "SamplesPerScene" : 8192,
+  "ScenesPerBatch" : 4,
+  "DataLoaderThreads" : 14,
+  "ClampingDistance" : 0.05,
+  "CodeRegularization" : true,
+  "CodeRegularizationLambda" : 0.001,
+  "CodeBound" : 1.0,
+
+  "cross_validation": "cross validation of the Deepsdf pretraining",
+  "cross_validation_hyperparameter_grid":{
+    "CodeRegularizationLambda":[0.0001,0.001,0.01],
+    "LearningRateSchedule_Decoder_Initial" : [0.0001, 0.0003, 0.0005],
+    "ClampingDistance" :[0.01, 0.05, 0.1],
+    "SamplesPerScene": [4096, 8192],
+
+  "cross_validation setting ": "validation parameters to be adjusted according to the User",
+  "cross_valiadion_folds":3,
+  "cross_valiadion_randomseed":42,
+  "cross_valiadion_reduced epochs":200,
+  "cross_validation_file_source":"examples/cars/all_instances_fixed.json"
+
+  
+
+
+
+
+
+  }
+
+} 

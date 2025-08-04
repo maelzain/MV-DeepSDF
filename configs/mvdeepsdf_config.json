@@ -1,0 +1,61 @@
+{
+    "data_source": "dataa/SdfSamples/ShapeNetV2/02958343",
+    "stage1": {
+        "latent_dim": 256,
+        "decoder_dims": [512, 512, 512, 512, 512, 512, 512, 512],
+        "dropout": [4],
+        "dropout_prob": 0.2,
+        "norm_layers": [0, 1, 2, 3, 4, 5, 6, 7],
+        "latent_in": [4],
+        "weight_norm": true,
+        "xyz_in_all": false,
+        "use_tanh": false,
+        "latent_dropout": false,
+        "learning_rate": 1e-4,
+        "weight_decay": 1e-4,
+        "device": "cuda"
+    },
+    "stage2": {
+        "num_points": 256,
+        "global_feature_dim": 1024,
+        "latent_dim": 256,
+        "num_views": 6,
+        "decoder_dims": [512, 512, 512, 512, 512, 512, 512, 512],
+        "dropout": [4],
+        "dropout_prob": 0.1,
+        "norm_layers": [0, 1, 2, 3, 4, 5, 6, 7],
+        "latent_in": [4],
+        "weight_norm": false,
+        "xyz_in_all": false,
+        "use_tanh": true,
+        "latent_dropout": false,
+        "learning_rate": 1e-5,
+        "weight_decay": 1e-5,
+        "device": "cuda",
+        "pretrained_decoder_path": "examples/cars/ModelParameters/latest.pth",
+        "gt_latent_path": "examples/cars/LatentCodes/latest.pth",
+        "split_file": "configs/mvdeepsdf_stage2_train.json",
+        "data_root": "experiments/multisweep_data_final"
+    },
+    "data": {
+        "mesh_root": "/mnt/windows/sharedU/02958343",
+        "output_root": "dataa/MultiSweepFPS/ShapeNetV2/02958343",
+        "num_views": 6,
+        "num_points": 256,
+        "azimuth_range": [0, 180],
+        "distance_range": [3, 15],
+        "height_range": [0.8, 1.2]
+    },
+    "training": {
+        "batch_size": 1,
+        "num_epochs": 20,
+        "save_frequency": 1,
+        "validation_frequency": 5,
+        "output_dir": "experiments/mvdeepsdf_stage2_specification_compliant"
+    },
+    "evaluation": {
+        "chamfer_threshold": 0.1,
+        "resolution": 64,
+        "num_samples": 30000
+    }
+} 
