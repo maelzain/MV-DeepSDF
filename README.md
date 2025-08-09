@@ -170,7 +170,7 @@ reconstructed_mesh = model.reconstruct_mesh(latent_code)
 <td><strong>0.82</strong></td>
 <td><strong>0.86</strong></td>
 <td><strong>0.79</strong></td>
-<td>3.2 hrs</td>
+<td>0.5 hrs</td>
 </tr>
 <tr>
 <td>DeepSDF (Single-view)</td>
