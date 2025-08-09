@@ -11,7 +11,7 @@
 
 **Implementation of "MV-DeepSDF: Implicit Modeling with Multi-Sweep Point Clouds for 3D Vehicle Reconstruction in Autonomous Driving"**
 
-[🌐 **Repository**](https://github.com/maelzain/MV-DeepSDF-) • [🚀 **Quick Start**](#-quick-start) • [📊 **Results**](#-experimental-results) • [📄 **Original Paper**](https://arxiv.org/abs/2403.xxxxx) • [📖 **DeepSDF Paper**](http://openaccess.thecvf.com/content_CVPR_2019/html/Park_DeepSDF_Learning_Continuous_Signed_Distance_Functions_for_Shape_Representation_CVPR_2019_paper.html)
+[🌐 **Repository**](https://github.com/maelzain/MV-DeepSDF) • [🚀 **Quick Start**](#-quick-start) • [📊 **Results**](#-experimental-results) • [📄 **Original Paper**](https://arxiv.org/abs/2403.xxxxx) • [📖 **DeepSDF Paper**](http://openaccess.thecvf.com/content_CVPR_2019/html/Park_DeepSDF_Learning_Continuous_Signed_Distance_Functions_for_Shape_Representation_CVPR_2019_paper.html)
 
 </div>
 
@@ -88,8 +88,8 @@ graph TD
 
 ```bash
 # Clone with submodules
-git clone --recursive https://github.com/maelzain/MV-DeepSDF-.git
-cd MV-DeepSDF-
+git clone --recursive https://github.com/maelzain/MV-DeepSDF.git
+cd MV-DeepSDF
 
 # Create isolated environment
 conda env create -f environment_cuda113.yml
@@ -346,8 +346,8 @@ We actively encourage community contributions. Please review our [Contribution G
 #### Development Workflow
 ```bash
 # Fork and clone
-git clone https://github.com/maelzain/MV-DeepSDF-.git
-cd MV-DeepSDF-
+git clone https://github.com/maelzain/MV-DeepSDF.git
+cd MV-DeepSDF
 
 # Create feature branch
 git checkout -b feature/your-enhancement
@@ -406,11 +406,11 @@ We extend our sincere gratitude to the individuals and institutions that made th
 
 ### 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=maelzain/MV-DeepSDF-&type=Date)](https://star-history.com/#maelzain/MV-DeepSDF-&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=maelzain/MV-DeepSDF&type=Date)](https://star-history.com/#maelzain/MV-DeepSDF&Date)
 
 **Advancing 3D Computer Vision Through Multi-View Deep Learning**
 
-[⭐ **Star this Repository**](https://github.com/maelzain/MV-DeepSDF-) | [🍴 **Fork & Contribute**](https://github.com/maelzain/MV-DeepSDF-/fork) | [📖 **Original DeepSDF**](https://github.com/facebookresearch/DeepSDF)
+[⭐ **Star this Repository**](https://github.com/maelzain/MV-DeepSDF) | [🍴 **Fork & Contribute**](https://github.com/maelzain/MV-DeepSDF/fork) | [📖 **Original DeepSDF**](https://github.com/facebookresearch/DeepSDF)
 
 ---
 
